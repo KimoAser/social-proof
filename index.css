@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.container {
+    max-width: 30rem;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem;
+    color: purple;
+}
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+}
+.stars-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: linen;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+.stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stars-review h4 {
+    color: purple;
+}
+.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.profile-review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: purple;
+    border-radius: 1rem;
+}
+.profile img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.profile-review .his-name {
+    color: white;
+}
+.profile-review p {
+    color: white;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.verified {
+    color: #FF00BF;
+}
+
+@media only screen and (min-width:37.5rem) {
+    .container {
+        max-width: 65rem;
+        margin: auto 0;
+    }
+    .first {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .header {
+        text-align: left;
+        width: 40%;
+    }
+    .second {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .rating {
+        width: 45%;
+        min-width:0;
+    }
+    .stars-review {
+        flex-direction: row;
+    }
+    .profile-review p {
+        font-size: clamp(0.75rem, 0rem + 2vw, 1rem);
+    }
+    h1 {
+        font-size: clamp(2rem, 0.5rem + 4vw, 2.5rem);
+    }
+    #second-rate {
+        position: relative;
+        left: 2rem;
+    }
+    #third-rate {
+        position: relative;
+        left: 4rem;
+    }
+    #second-person {
+        position: relative;
+        top: 1rem;
+    }
+    #third-person {
+        position: relative;
+        top: 2rem;
+    }
+}
